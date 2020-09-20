@@ -1,0 +1,9 @@
+.container,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    @media (min-width: 992px) {
+        max-width: 760px;
+    }
+}

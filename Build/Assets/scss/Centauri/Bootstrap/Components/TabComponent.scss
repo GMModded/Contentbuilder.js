@@ -1,0 +1,51 @@
+.nav-tabs {
+    position: relative;
+    z-index: 1;
+    margin-right: 1rem;
+    margin-bottom: -20px;
+    margin-left: 1rem;
+    background-color: $defaultBgColor;
+    border: 0;
+    border-radius: .25rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .18), 0 5px 15px 0 rgba(0, 0, 0, .15);
+
+    .nav-item {
+        border: 0 !important;
+        border-radius: 2.5px;
+        padding: 12.5px 25px;
+        margin-bottom: 0;
+        color: white !important;
+
+        &.active {
+            background-color: #1e2431;
+            text-decoration: underline;
+        }
+    }
+}
+
+.tab-content {
+    &.card {
+        font-weight: 400;
+        border: 0 !important;
+        box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, .16), 0 2.5px 10px 0 rgba(0, 0, 0, .12);
+        padding-top: 30px;
+    }
+
+    .tab-pane {
+        padding: 0 15px;
+        opacity: 1;
+
+        & > p {
+            &.title {
+                font-size: 17px;
+                text-decoration: underline;
+
+                & + .row-wrapper {
+                    border-left: 4px solid $defaultBgColor;
+                    margin: 10px 0;
+                    padding: 10px 0 0 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.btn {
+    margin: 5px;
+    color: $white;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, .15), 0 2.5px 10px 0 rgba(0, 0, 0, .125);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding: 13.5px 35px;
+    font-size: 13px;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &.active {
+        outline: 0 !important;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1875), 0 5px 15px 0 rgba(0, 0, 0, .15);
+
+        &.btn-default {
+            color: #fff !important;
+        }
+    }
+
+    &:active {
+        &:focus {
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1875), 0 5px 15px 0 rgba(0, 0, 0, .15) !important;
+        }
+    }
+
+    &.active {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1875), 0 5px 15px 0 rgba(0, 0, 0, .15) !important;
+    }
+
+    &:not([disabled]),
+    &:not(.disabled) {
+        &:active,
+        &.active {
+            &.btn-primary { background-color: #0b51c5 !important; }
+            &.btn-info    { background-color: #14799e !important; }
+            &.btn-success { background-color: #006228 !important; }
+            &.btn-warning { background-color: #c80    !important; }
+            &.btn-danger  { background-color: #ce0012 !important; }
+        }
+    }
+
+    &.btn-default {
+        background-color: $defaultBgColor;
+    }
+
+    &.btn-primary {
+        background-color: $primary;
+    }
+
+    &.btn-info {
+        background-color: $info;
+    }
+
+    &.btn-success {
+        background-color: $success;
+    }
+
+    &.btn-warning {
+        background-color: $warning;
+    }
+
+    &.btn-danger {
+        background-color: $danger;
+    }
+}
+
+.btn-floating {
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1875), 0 5px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.btn,
+.btn-floating {
+    &.fa-lg {
+        font-size: 20px;
+    }
+
+    &.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

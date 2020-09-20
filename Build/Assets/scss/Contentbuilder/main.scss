@@ -1,0 +1,20 @@
+#page-content {
+    *[contenteditable="true"] {
+        outline: none !important;
+    }
+
+    .content-placeholder {
+        display: none;
+        margin-top: 30px;
+        height: 50px;
+        width: 100%;
+
+        &.cp-active {
+            display: block;
+
+            &.selected {
+                transform: scale(.8);
+            }
+        }
+    }
+}

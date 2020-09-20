@@ -1,0 +1,40 @@
+/**
+ * Default Core Styles
+ * 
+ * Centauri
+ * Bootstrap v4.5.2
+ * Waves
+ * FontAwesome 5.12.0
+ */
+@import "Centauri/Bootstrap/main";
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/node-waves/dist/waves.min.css";
+@import "../../Packages/fontawesome5.12.0/css/fontawesome.min.css";
+@import "../../Packages/fontawesome5.12.0/css/solid.min.css";
+@import "../../Packages/fontawesome5.12.0/css/brands.min.css";
+
+/**
+ * Fonts
+ * 
+ * Raleway
+ * fatfrank
+ */
+@import "fonts";
+
+/**
+ * Overrides
+ * 
+ * Bootstrap
+ */
+@import "Overrides/Bootstrap/container";
+@import "Overrides/Bootstrap/spaces";
+
+/**
+ * Contentbuilder
+ */
+@import "Contentbuilder/main.scss";
+
+/**
+ * Sidebar-Items
+ */
+@import "SidebarItems/main";

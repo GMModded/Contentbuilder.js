@@ -1,0 +1,32 @@
+.ci-field {
+    &.ci-colorpicker-field {
+        .pickr {
+            width: 100%;
+            height: 45px;
+
+            button {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &[data-renderas="colorpicker"] {
+        display: flex;
+
+        .pickr {
+            margin-top: 7.5px;
+
+            button {
+                &.pcr-button {
+                    width: 37px;
+                    height: 37px;
+                }
+            }
+        }
+    }
+}
+
+.pcr-app {
+    margin-left: 210px;
+}

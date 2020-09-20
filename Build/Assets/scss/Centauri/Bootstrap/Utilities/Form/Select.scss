@@ -1,0 +1,83 @@
+div.ci-select {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, .16), 0 2.5px 10px 0 rgba(0, 0, 0, .12);
+    z-index: 1;
+
+    &.active {
+        z-index: 2;
+
+        & ~ i {
+            z-index: 2;
+        }
+
+        & ~ label {
+            &:not(:last-child) {
+                transform: translateY(-25px) scale(.8) !important;
+            }
+        }
+    }
+
+    & ~ label {
+        &:not(:last-child) {
+            transform: translateY(-15px) scale(.8) !important;
+        }
+    }
+
+    & ~ i {
+        position: absolute;
+        top: 12.5px;
+        right: 15px;
+        color: #2d364a;
+        z-index: 1;
+        transition: .33s;
+    }
+
+    &.active {
+        & ~ i {
+            transform: rotate(-180deg);
+        }
+    }
+
+    & > div {
+        width: 100%;
+        clear: both;
+        line-height: 1.3rem;
+        color: #000;
+        text-align: left;
+        text-transform: none;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+            background-color: $defaultBgColor;
+            color: white;
+        }
+
+        &[data-value="undefined"] {
+            background-color: #eee;
+            color: #aaa;
+            cursor: default !important;
+        }
+    }
+}
+
+input.ci-select-toggler {
+    background-color: transparent !important;
+    cursor: pointer;
+
+    &:hover {
+        & ~ label {
+            &:not(:last-child) {
+                transform: translateY(-25px) scale(.8) !important;
+            }
+        }
+    }
+}
+
+input.ci-select-toggler ~ label {
+    cursor: pointer;
+}

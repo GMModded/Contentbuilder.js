@@ -1,0 +1,6 @@
+.ci-field {
+    & > input[type="checkbox"] {
+        margin: 0 10px 0 0;
+        box-shadow: none !important;
+    }
+}

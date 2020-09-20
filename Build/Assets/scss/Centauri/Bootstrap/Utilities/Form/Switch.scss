@@ -1,0 +1,51 @@
+.ci-switch {
+    position: relative;
+    margin: {
+        top: 25px;
+        bottom: 25px;
+    }
+
+    label {
+        cursor: pointer;
+
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked {
+                & + span {
+                    background-color: $primary;
+
+                    &:after {
+                        background: #fefefe !important;
+                        left: calc(100% - 15px);
+                    }
+                }
+            }
+        }
+
+        span {
+            position: relative;
+            display: inline-block;
+            background-color: #7f7f7f;
+            vertical-align: middle;
+            border-radius: 15px;
+            width: 40px;
+            height: 15px;
+            transition: background .3s ease;
+            margin-right: 15px;
+
+            &:after {
+                content: " ";
+                position: absolute;
+                top: -4px;
+                left: -5px;
+                background-color: #f1f1f1;
+                border-radius: 20px;
+                box-shadow: 0 1px 4px 1px rgba(0,0,0,0.4);
+                width: 21px;
+                height: 21px;
+                transition: left .3s ease, background .3s ease, box-shadow 1s ease;
+            }
+        }
+    }
+}
